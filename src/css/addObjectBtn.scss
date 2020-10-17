@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+.add-object-btn {
+  display: flex;
+  justify-content: center;
+  color: #828282;
+  font-weight: 500;
+  font-size: 1.0625rem;
+  padding: 20px;
+  transition: 0.3s;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+
+  &:hover {
+    background-color: #cfcfcf;
+    color: #555;
+  }
+  i {
+    margin-right: 10px;
+  }
+}

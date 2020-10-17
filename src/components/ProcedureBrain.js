@@ -14,18 +14,21 @@ export default class ProcedureBrain extends Component {
           name: "Первый объект",
           firstPlayerScore: 0,
           secondPlayerScore: 0,
+          isDevidable: false,
         },
         {
           id: 2,
           name: "Второй объект",
           firstPlayerScore: 0,
           secondPlayerScore: 0,
+          isDevidable: false,
         },
         {
           id: 3,
           name: "Третий объект",
           firstPlayerScore: 0,
           secondPlayerScore: 0,
+          isDevidable: false,
         },
       ],
       firstPlayer: { name: "Игрок 1", ready: false },
@@ -41,7 +44,10 @@ export default class ProcedureBrain extends Component {
         <ProcedureHeader />
         <div class="procedure-body__outer-wrapper">
           <div class="procedure-body__inner-wrapper">
-            <SharedObjectList areReady={playersReady} />
+            <SharedObjectList
+              areReady={playersReady}
+              sharedObjects={this.state.sharedObjects}
+            />
             <Player name={this.state.firstPlayer.name} />
             <Player name={this.state.secondPlayer.name} />
             <ResultList />

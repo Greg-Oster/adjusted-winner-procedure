@@ -1,7 +1,16 @@
 @import "./css/variables.scss";
 @import "./normalize.scss";
+@import "./css/sharedObject.scss";
+@import "./css/addObjectBtn.scss";
 
 body {
   font-family: $main_font_family;
   color: $main_font_color;
+}
+
+.component-wrapper {
+  background: #ededed;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.09);
+  border-radius: 5px;
+  padding: 25px 20px;
 }

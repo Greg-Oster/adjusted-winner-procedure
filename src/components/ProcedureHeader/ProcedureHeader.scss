@@ -1,0 +1,35 @@
+header {
+  padding: 0 2.1875rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1355px;
+  padding: 50px 35px 40px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.25rem;
+  margin: 0 0 0.4375rem 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.preset {
+  background-color: #ededed;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.09);
+  border-radius: 30px;
+  font-weight: 500;
+  align-self: flex-end;
+  display: inline-table;
+  background-color: #ededed;
+  padding: 12px 20px;
+  font-size: 1.0625rem;
+  transition: 0.3s;
+  cursor: pointer;
+}

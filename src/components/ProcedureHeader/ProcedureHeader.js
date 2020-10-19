@@ -1,7 +1,9 @@
 import React from "react";
 import "./ProcedureHeader.scss";
+import { data } from "../presetdata";
 
-export default function ProcedureHeader() {
+export default function ProcedureHeader(props) {
+  const newData = data();
   return (
     <header>
       <nav>
@@ -9,9 +11,12 @@ export default function ProcedureHeader() {
           <h2>Справедливый дележ</h2>
           <h3>процедура — “подстраивающийся победитель”</h3>
         </div>
-        <div class="preset" id="preset_1">
+        <button
+          class="preset"
+          id="preset_1"
+          onClick={props.handlePresetClick(newData)}>
           Пресет 1
-        </div>
+        </button>
       </nav>
     </header>
   );

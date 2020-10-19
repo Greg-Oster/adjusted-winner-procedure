@@ -1,11 +1,18 @@
 @import "./variables.scss";
 
+.shared-object h3 {
+  margin: 0 0 0.9375rem 1.25rem;
+  font-size: 1.47rem;
+  font-weight: 500;
+}
+
 .shared-object__wrapper {
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
 
   .shared-object__input {
+    flex-grow: 1;
     background-color: #fff;
     padding: 17px;
     margin-right: 5px;
@@ -14,7 +21,6 @@
     font-weight: 500;
     font-size: 1.0625rem;
     transition: 0.3s;
-    border-bottom: 1px solid transparent;
   }
 
   .shared-object__input input {

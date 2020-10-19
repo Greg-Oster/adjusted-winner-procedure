@@ -2,10 +2,34 @@
 @import "./normalize.scss";
 @import "./css/sharedObject.scss";
 @import "./css/addObjectBtn.scss";
+@import "./css/calculateResultBtn.scss";
+@import "./css/player.scss";
+@import "./css/ResultList.scss";
 
 body {
   font-family: $main_font_family;
   color: $main_font_color;
+}
+
+.procedure-body {
+  padding: 0 2.1875rem 0;
+
+  .procedure-body__inner-wrapper {
+    padding: 2.1875rem;
+    max-width: 1355px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+    background: #f9f9f9;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: auto 27% 27%;
+    grid-template-rows: auto;
+
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+  }
 }
 
 .component-wrapper {
@@ -13,4 +37,16 @@ body {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.09);
   border-radius: 5px;
   padding: 25px 20px;
+}
+
+.player-ready {
+  .player-object__name {
+    box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+    background-color: #eaeaea;
+  }
+
+  .player-object__score {
+    box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+    background-color: #eaeaea;
+  }
 }

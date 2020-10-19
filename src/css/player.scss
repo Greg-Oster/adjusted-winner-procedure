@@ -1,0 +1,92 @@
+@import "./variables.scss";
+
+.player__header input {
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  margin: 0 0 0.9375rem 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  width: 60%;
+}
+
+.player-object__wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+
+  .player-object__name {
+    background-color: #fff;
+    padding: 19px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.0625rem;
+    color: #243754;
+
+    flex-grow: 1;
+    margin-right: 5px;
+    font-weight: 400;
+    padding-top: 20px;
+    transition: 0.3s;
+  }
+
+  .player-object__score {
+    background-color: #fff;
+    padding: 17px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.0625rem;
+    transition: 0.3s;
+    color: #243754;
+    width: 25px;
+    border: none;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      /* display: none; <- Crashes Chrome on hover */
+      -webkit-appearance: none;
+      margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    }
+
+    &[type="number"] {
+      -moz-appearance: textfield; /* Firefox */
+    }
+  }
+}
+
+.remain-points-status {
+  display: flex;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.09);
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.0625rem;
+  transition: 0.3s;
+  color: #243754;
+  flex-grow: 1;
+  padding-top: 20px;
+  background-color: #ffd34f;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.player-ready-btn {
+  width: 100%;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.09);
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.0625rem;
+
+  transition: 0.3s;
+  color: #243754;
+
+  padding: 20px;
+  background-color: #27ae60;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}

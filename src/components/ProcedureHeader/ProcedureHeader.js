@@ -12,7 +12,7 @@ export default function ProcedureHeader(props) {
           <h3>процедура — “подстраивающийся победитель”</h3>
         </div>
         <button
-          class="preset"
+          className="preset"
           id="preset_1"
           onClick={props.handlePresetClick(newData)}>
           Пресет 1

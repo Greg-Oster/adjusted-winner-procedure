@@ -19,7 +19,6 @@ export default class ProcedureBrain extends Component {
   }
 
   changeSharedItem = (e) => {
-    console.log(e.target.id);
     let itemId = e.target.id;
     let updateObject = this.state.sharedObjects.slice();
     updateObject[itemId].name = e.target.value;
@@ -53,7 +52,6 @@ export default class ProcedureBrain extends Component {
   };
 
   deleteItem = (index) => (e) => {
-    console.log(index);
     let updateObject = this.state.sharedObjects.slice();
     updateObject.splice(index, 1);
     this.setState({
@@ -64,9 +62,6 @@ export default class ProcedureBrain extends Component {
   //sharedObjects[{…}, {…}, {…}, {…}, {…}, {…}, {…}]
   //  0: {firstPlayerScore: 17, id: 1, isDevidable: false, n…}
   handleInputChange = (name) => (e) => {
-    console.log("worked");
-    console.log(e.target.id);
-
     let newObject = this.state.sharedObjects.slice();
     if (name === "firstPlayerScore") {
       newObject[e.target.id].firstPlayerScore = parseInt(e.target.value);
@@ -74,7 +69,6 @@ export default class ProcedureBrain extends Component {
       newObject[e.target.id].secondPlayerScore = parseInt(e.target.value);
     }
 
-    console.log(newObject);
     this.setState({
       sharedObjects: newObject,
     });
@@ -98,7 +92,6 @@ export default class ProcedureBrain extends Component {
     this.setState({
       renderResult: true,
     });
-    console.log(123);
   };
 
   handlePresetClick = (array) => (e) => {
@@ -128,8 +121,8 @@ export default class ProcedureBrain extends Component {
     return (
       <>
         <ProcedureHeader handlePresetClick={this.handlePresetClick} />
-        <div class="procedure-body">
-          <div class="procedure-body__inner-wrapper">
+        <div className="procedure-body">
+          <div className="procedure-body__inner-wrapper">
             <SharedObjectList
               areReady={playersReady}
               anyPlayerReady={anyPlayerReady}

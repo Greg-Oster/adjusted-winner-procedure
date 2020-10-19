@@ -32,7 +32,6 @@ export default function Player(props) {
   });
 
   const remainPoints = player === "first" ? remainPointsF : remainPointsS;
-  console.log("remain points", remainPoints);
 
   return (
     <>
@@ -65,11 +64,11 @@ function PlayerObject(props) {
     : "player-object__wrapper ";
   return (
     <div className={wrapperClass}>
-      <div class="player-object__name">{props.name}</div>
+      <div className="player-object__name">{props.name}</div>
       <input
         type="number"
         className="player-object__score"
-        value={props.playerScore}
+        value={props.playerScore || ""}
         onChange={props.handleChange}
         id={props.number}
         disabled={ready ? "disabled" : ""}

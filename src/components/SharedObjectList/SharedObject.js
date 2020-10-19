@@ -7,9 +7,9 @@ export default function SharedObject(props) {
   return (
     <>
       <div className="shared-object__wrapper">
-        <div class="shared-object__input">
+        <div className="shared-object__input">
           <input
-            placeholder="Объект 0"
+            placeholder="Что будем делить?"
             value={props.name}
             onChange={props.changeSharedItem}
             id={props.id}
@@ -18,10 +18,10 @@ export default function SharedObject(props) {
         </div>
         <div className="shared-object__devidable">делимый</div>
         <button
-          class="shared-object__delete-btn"
+          className="shared-object__delete-btn"
           onClick={props.deleteItem(objectIndex)}
           disabled={anyPlayerReady ? "disabled" : ""}>
-          <i class="fas fa-times" aria-hidden="true"></i>
+          <i className="fas fa-times" aria-hidden="true"></i>
         </button>
       </div>
     </>

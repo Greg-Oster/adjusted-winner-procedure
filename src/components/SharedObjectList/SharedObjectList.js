@@ -49,7 +49,7 @@ function AddObjectBtn(props) {
       {props.anyPlayerReady ? (
         ""
       ) : (
-        <i class="fas fa-plus" aria-hidden="true"></i>
+        <i className="fas fa-plus" aria-hidden="true"></i>
       )}
       {props.anyPlayerReady
         ? "Участник подтвердил готовность"
